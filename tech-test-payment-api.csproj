@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>tech_test_payment_api</RootNamespace>
+    <RootNamespace>TechTest_PaymentApi</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

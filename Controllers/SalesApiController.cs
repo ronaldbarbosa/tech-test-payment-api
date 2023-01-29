@@ -19,10 +19,19 @@ namespace TechTest_PaymentApi.Controllers
         public IActionResult SearchSale(int id)
         {
             var sale = _context.Sales.Find(id);
+
             if (sale == null)
             {
                 return NotFound();
             }
+
+            // Nas próximas 3 linhas eu fiz essa "gambiarra" porque no retorno do Db, o objeto "sale" ficava com os atributos 
+            // Seller e Item com o valor null.
+            // To do: procurar o jeito certo de carregar esses atributos.
+            sale.Seller = _context.Sellers.Find(sale.SellerId);
+            sale.Item = _context.SaleItems.Find(sale.SaleItemId);
+            sale.Item.Product = _context.Products.Find(sale.Item.ProductId);
+
             return Ok(sale);
         }
 

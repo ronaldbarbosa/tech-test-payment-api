@@ -2,7 +2,7 @@ namespace TechTest_PaymentApi.Models.Enums
 {
     public enum StatusEnum
     {
-        AguarandoPagamento,
+        AguardandoPagamento,
         PagamentoAprovado,
         EnviadoParaTransportadora,
         Entregue,

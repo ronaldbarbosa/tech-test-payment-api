@@ -1,0 +1,15 @@
+{
+    "seller": {
+      "cpf": "",
+      "name": "",
+      "email": "",
+      "phoneNumber": ""
+    },
+    "date": "",
+    "item": {
+      "product": {
+        "name": ""
+      },
+      "quantity": 0
+    }
+}

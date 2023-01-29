@@ -2,7 +2,7 @@ namespace TechTest_PaymentApi.Models
 {
     public class Seller
     {
-        public int Id { get; set; }
+        public int SellerId { get; set; }
         public string CPF { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
